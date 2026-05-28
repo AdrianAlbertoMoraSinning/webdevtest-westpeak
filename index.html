@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WestPeak Auto Finance | Calgary Auto Financing</title>
+  <meta name="description" content="WestPeak Auto Finance helps Albertans get approved with practical, human auto financing support in Calgary and across Alberta." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="WestPeak Auto Finance home">
+        <span class="brand-mark">W</span>
+        <span class="brand-text">
+          <strong>WESTPEAK</strong>
+          <small>AUTO FINANCE</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#how">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#resources">Resources</a>
+        <a class="nav-cta" href="#approval-form">Get Approved</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Local expertise. Real solutions.</p>
+          <h1>Helping Albertans Get Approved and On the Road.</h1>
+          <p class="hero-lead">
+            Whether you have good credit, bad credit, or no credit — WestPeak helps Alberta drivers explore financing options with clarity, respect and real guidance.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#approval-form">Get Pre-Approved →</a>
+            <a class="btn secondary" href="mailto:moliname@live.com?subject=WestPeak Auto Finance Inquiry">Email an Advisor</a>
+          </div>
+
+          <div class="hero-benefits" aria-label="Quick benefits">
+            <div><span>⌂</span><strong>Bad Credit Welcome</strong><small>We find options for your situation.</small></div>
+            <div><span>◇</span><strong>Newcomers Accepted</strong><small>We help you get started in Canada.</small></div>
+            <div><span>↔</span><strong>Flexible Financing</strong><small>Options for different credit types.</small></div>
+          </div>
+        </div>
+
+        <div class="hero-person" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1590086782957-93c06ef21604?q=80&w=900&auto=format&fit=crop" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="advisor-area" id="about">
+      <div class="container advisor-layout">
+        <aside class="vertical-stats">
+          <div><span>⚙</span><strong>8+</strong><small>Years Experience</small></div>
+          <div><span>☑</span><strong>5000+</strong><small>Drivers Helped</small></div>
+          <div><span>⌖</span><strong>Alberta</strong><small>Calgary & Area Expertise</small></div>
+          <div><span>◉</span><strong>90%+</strong><small>Approval Pathways</small></div>
+        </aside>
+
+        <div class="advisor-photo">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=900&auto=format&fit=crop" alt="Canadian auto finance advisor">
+        </div>
+
+        <div class="advisor-copy">
+          <p class="eyebrow dark-text">Meet your advisor</p>
+          <h2>Local. Experienced. Here to Help.</h2>
+          <p>
+            WestPeak Auto Finance supports Alberta drivers with a clear, practical and human approach to vehicle financing.
+          </p>
+          <p>
+            Our goal is simple: understand your situation, explain your options, and help you move forward without pressure or confusion.
+          </p>
+
+          <ul class="check-list">
+            <li>8+ years automotive finance experience</li>
+            <li>Finance and real estate background</li>
+            <li>Trusted by Calgary and Alberta drivers</li>
+            <li>Bilingual support available</li>
+          </ul>
+        </div>
+
+        <form class="approval-card" id="approval-form" name="westpeak-approval" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="westpeak-approval" />
+          <p class="hidden-field"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+          <h3>Get Pre-Approved</h3>
+          <p>It only takes a few minutes.</p>
+
+          <label>Full Name <span>*</span>
+            <input name="full_name" type="text" placeholder="Your full name" required>
+          </label>
+
+          <label>Phone Number <span>*</span>
+            <input name="phone" type="tel" placeholder="(403) 123-4567" required>
+          </label>
+
+          <label>Email <span>*</span>
+            <input name="email" type="email" placeholder="moliname@live.com" required>
+          </label>
+
+          <label>Credit Situation <span>*</span>
+            <select name="credit_situation" required>
+              <option value="">Please select an option</option>
+              <option>Good Credit</option>
+              <option>Bad Credit</option>
+              <option>No Credit / New to Canada</option>
+              <option>Bankruptcy / Consumer Proposal</option>
+              <option>Not Sure</option>
+            </select>
+          </label>
+
+          <label>Monthly Income <small>(Optional)</small>
+            <input name="monthly_income" type="text" placeholder="e.g. $4,000">
+          </label>
+
+          <button class="btn primary full" type="submit">Continue →</button>
+          <small class="form-note">No pressure. No obligation. A real advisor will follow up.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="how-section" id="how">
+      <div class="container">
+        <div class="section-title">
+          <h2>4 Simple Steps to Get Approved</h2>
+        </div>
+
+        <div class="steps-grid">
+          <article>
+            <span>👤</span>
+            <b>1</b>
+            <h3>Apply in Minutes</h3>
+            <p>Fill out the quick and secure pre-approval form.</p>
+          </article>
+          <article>
+            <span>📄</span>
+            <b>2</b>
+            <h3>We Review Your Options</h3>
+            <p>We assess your situation and find financing pathways.</p>
+          </article>
+          <article>
+            <span>✓</span>
+            <b>3</b>
+            <h3>Get Approved</h3>
+            <p>Receive approval and financing options that fit your needs.</p>
+          </article>
+          <article>
+            <span>🚗</span>
+            <b>4</b>
+            <h3>Drive With Confidence</h3>
+            <p>Choose your vehicle and hit the road.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-title light">
+          <h2>What Our Clients Say</h2>
+          <p>Real stories from Albertans we have helped.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“WestPeak made the impossible feel possible. I had credit issues and finally understood my options.”</p>
+            <strong>Jason R.</strong>
+            <small>Calgary, AB</small>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“Professional, honest and clear. The process felt simple from start to finish.”</p>
+            <strong>Sandra M.</strong>
+            <small>Airdrie, AB</small>
+          </article>
+          <article>
+            <div class="stars">★★★★★</div>
+            <p>“As a newcomer, I did not know where to start. They explained everything and helped me move quickly.”</p>
+            <strong>Carlos G.</strong>
+            <small>Calgary, AB</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources-section" id="resources">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resources & Learning Center</h2>
+          <p>Helpful guides and tips to make smarter financing decisions.</p>
+        </div>
+
+        <div class="resource-grid">
+          <article>
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=900&auto=format&fit=crop" alt="">
+            <div><span>Loan Basics</span><h3>Understanding Car Loans in Alberta</h3><p>Learn the basics of auto financing and your options.</p><a href="#">Read More →</a></div>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=900&auto=format&fit=crop" alt="">
+            <div><span>Credit Help</span><h3>Bad Credit Auto Loans</h3><p>Solutions available even with past credit challenges.</p><a href="#">Read More →</a></div>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop" alt="">
+            <div><span>Newcomers</span><h3>Financing as a Newcomer to Canada</h3><p>Everything you need to know as a newcomer.</p><a href="#">Read More →</a></div>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=900&auto=format&fit=crop" alt="">
+            <div><span>Tips & Advice</span><h3>Tips to Improve Your Approval Odds</h3><p>Practical tips to increase your chances of approval.</p><a href="#">Read More →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-layout">
+        <div>
+          <h2>Ready to Take the Next Step?</h2>
+          <p>Let us help you explore your options and get into the right vehicle.</p>
+        </div>
+        <div class="final-actions">
+          <a class="btn primary" href="#approval-form">Get Pre-Approved</a>
+          <a class="btn secondary dark" href="mailto:moliname@live.com?subject=WestPeak Auto Finance Inquiry">Email Me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-layout">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark">W</span>
+          <span class="brand-text">
+            <strong>WESTPEAK</strong>
+            <small>AUTO FINANCE</small>
+          </span>
+        </a>
+        <p>Helping Albertans get approved for the vehicles they need with trusted financing solutions.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#how">How It Works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#resources">Resources</a>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <a href="#approval-form">Bad Credit Financing</a>
+        <a href="#approval-form">Newcomer Financing</a>
+        <a href="#approval-form">No Credit Financing</a>
+        <a href="#approval-form">Vehicle Loans</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:moliname@live.com">✉ moliname@live.com</a>
+        <a href="#approval-form">Apply Online</a>
+        <p>Calgary, AB, Canada</p>
+      </div>
+    </div>
+
+    <div class="container legal">
+      <span>© 2026 WestPeak Auto Finance. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Use</span>
+    </div>
+  </footer>
+
+  <div class="mobile-bar">
+    <a href="mailto:moliname@live.com?subject=WestPeak Auto Finance Inquiry">Email</a>
+    <a href="sms:+14031234567">SMS</a>
+    <a href="#approval-form">Apply</a>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
