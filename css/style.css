@@ -226,12 +226,10 @@ select{appearance:auto}
 }
 
 .site-header .brand-logo {
-  width: 210px !important;
+  width: 185px !important;
   height: auto !important;
-  max-height: none !important;
   display: block !important;
 }
-
 .footer-logo {
   width: 220px !important;
   height: auto !important;
