@@ -195,40 +195,23 @@ select{appearance:auto}
 }
 
 .hidden-field{display:none!important}
-.brand-logo {
-  max-height: 64px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-}
-
-.site-header .brand-logo {
-    height: 160px;
-    width: auto;
-    display: block;
-    object-fit: contain;
-}
-
-.footer-logo {
-  max-height: 64px;
-}
 .site-header .nav {
-  min-height: 120px !important;
-  padding: 8px 0 !important;
+  min-height: 95px !important;
+  padding: 0 !important;
 }
 
 .site-header .brand {
-  width: 240px !important;
-  height: 110px !important;
+  width: 260px !important;
+  height: 95px !important;
   display: flex !important;
   align-items: center !important;
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 
 .site-header .brand-logo {
-   width: 240px !important;
-   height: auto !important;
-   display: block !important;
+  width: 230px !important;
+  height: auto !important;
+  display: block !important;
 }
 
 .footer-logo {
