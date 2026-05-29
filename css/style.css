@@ -203,9 +203,10 @@ select{appearance:auto}
 }
 
 .site-header .brand-logo {
-    height: 110px;
+    height: 160px;
     width: auto;
     display: block;
+    object-fit: contain;
 }
 
 .footer-logo {
