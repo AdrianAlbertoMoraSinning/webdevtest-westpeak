@@ -219,14 +219,14 @@ select{appearance:auto}
 
 .site-header .brand {
   width: 240px !important;
-  height: 90px !important;
+  height: 110px !important;
   display: flex !important;
   align-items: center !important;
   overflow: visible !important;
 }
 
 .site-header .brand-logo {
-   width: 190px !important;
+   width: 240px !important;
    height: auto !important;
    display: block !important;
 }
