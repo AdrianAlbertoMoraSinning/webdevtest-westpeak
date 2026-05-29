@@ -219,17 +219,18 @@ select{appearance:auto}
 
 .site-header .brand {
   width: 240px !important;
-  height: 100px !important;
+  height: 90px !important;
   display: flex !important;
   align-items: center !important;
   overflow: visible !important;
 }
 
 .site-header .brand-logo {
-  width: 185px !important;
-  height: auto !important;
-  display: block !important;
+   width: 190px !important;
+   height: auto !important;
+   display: block !important;
 }
+
 .footer-logo {
   width: 220px !important;
   height: auto !important;
