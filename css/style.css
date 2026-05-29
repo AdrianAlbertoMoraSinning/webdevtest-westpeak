@@ -212,3 +212,28 @@ select{appearance:auto}
 .footer-logo {
   max-height: 64px;
 }
+.site-header .nav {
+  min-height: 120px !important;
+  padding: 8px 0 !important;
+}
+
+.site-header .brand {
+  width: 240px !important;
+  height: 100px !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow: visible !important;
+}
+
+.site-header .brand-logo {
+  width: 210px !important;
+  height: auto !important;
+  max-height: none !important;
+  display: block !important;
+}
+
+.footer-logo {
+  width: 220px !important;
+  height: auto !important;
+  max-height: none !important;
+}
