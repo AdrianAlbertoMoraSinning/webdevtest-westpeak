@@ -195,3 +195,17 @@ select{appearance:auto}
 }
 
 .hidden-field{display:none!important}
+.brand-logo {
+  max-height: 64px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.site-header .brand-logo {
+  max-height: 58px;
+}
+
+.footer-logo {
+  max-height: 64px;
+}
