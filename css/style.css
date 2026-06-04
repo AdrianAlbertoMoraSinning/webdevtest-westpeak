@@ -1,4 +1,4 @@
-/* WESTPEAK AUTO FINANCE — Demo v4 */
+/* MONTECRISTO AUTO FINANCE — Demo v4 */
 :root{
   --navy:#08223b;
   --navy2:#0d3157;
@@ -196,26 +196,43 @@ select{appearance:auto}
 
 .hidden-field{display:none!important}
 .site-header .nav {
-  min-height: 95px !important;
+  min-height: 105px !important;
   padding: 0 !important;
 }
 
 .site-header .brand {
-  width: 260px !important;
-  height: 95px !important;
+  width: 310px !important;
+  height: 105px !important;
   display: flex !important;
   align-items: center !important;
   overflow: hidden !important;
 }
 
 .site-header .brand-logo {
-  width: 200px !important;
+  width: 250px !important;
   height: auto !important;
   display: block !important;
 }
 
 .footer-logo {
-  width: 220px !important;
+  width: 240px !important;
   height: auto !important;
   max-height: none !important;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
 }
