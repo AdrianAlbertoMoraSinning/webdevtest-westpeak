@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agenda de consultas | AP Abogados Asociados</title>
-  <meta name="description" content="Agenda una consulta con AP Abogados Asociados. Selecciona fecha y hora disponible." />
+  <html lang="en">
+  <title>Book Appointment | Montecristo Mortgage + Auto</title>
+  <meta name="description" content="Schedule an Appointment" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,51 +16,51 @@
   <header class="agenda-header">
     <a class="agenda-back" href="../../index.html">← Volver al inicio</a>
     <div>
-      <p class="eyebrow">Agenda de consultas</p>
-      <h1>Selecciona una fecha y hora disponible</h1>
-      <p>Horario de atención: lunes a viernes, de 8:00 a.m. a 5:00 p.m.</p>
+      <p class="eyebrow">Sechedule</p>
+      <h1>Select an Available Date and Time</h1>
+      <p>Business hours: Monday to Friday, 8:00 a.m. to 5:00 p.m.</p>
     </div>
   </header>
 
   <main class="agenda-shell">
     <section class="agenda-card">
       <div class="agenda-toolbar">
-        <button class="agenda-nav" id="prevWeek" type="button">← Semana anterior</button>
-        <strong id="weekLabel">Cargando...</strong>
-        <button class="agenda-nav" id="nextWeek" type="button">Semana siguiente →</button>
+        <button class="agenda-nav" id="prevWeek" type="button">← Previous Week</button>
+        <strong id="weekLabel">>Loading....</strong>
+        <button class="agenda-nav" id="nextWeek" type="button">Next Week →</button>
       </div>
       <div id="calendarGrid" class="calendar-grid" aria-live="polite"></div>
-      <p class="agenda-note">Las horas en gris ya no están disponibles. La reserva se confirma al enviar el formulario.</p>
+      <p class="agenda-note">Grey time slots are no longer available. Your appointment is confirmed when you submit the form.</p>
     </section>
 
     <section class="booking-card" id="bookingPanel">
-      <p class="eyebrow">Formulario de reserva</p>
-      <h2 id="selectedSlotTitle">Selecciona una hora</h2>
+      <p class="eyebrow">Appointment Request</p>
+      <h2 id="selectedSlotTitle">Select a time</h2>
       <form id="bookingForm" class="booking-form">
         <input type="hidden" id="appointmentDate" />
         <input type="hidden" id="appointmentTime" />
 
         <label>
-          Nombre completo
-          <input id="clientName" type="text" required maxlength="80" placeholder="Tu nombre" />
+          Name
+          <input id="clientName" type="text" required maxlength="80" placeholder="Your name" />
         </label>
 
         <label>
-          Teléfono o WhatsApp
-          <input id="clientPhone" type="tel" required maxlength="30" placeholder="Ej. +57 310 000 0000" />
+          Phone or WhatsApp
+          <input id="clientPhone" type="tel" required maxlength="30" placeholder="Ej. +1 403 123 4567" />
         </label>
 
         <label>
-          Correo electrónico
-          <input id="clientEmail" type="email" maxlength="90" placeholder="nombre@email.com" />
+          E-mail
+          <input id="clientEmail" type="email" maxlength="90" placeholder="name@email.com" />
         </label>
 
         <label>
-          Comentario corto
-          <textarea id="clientComment" rows="4" maxlength="350" placeholder="Describe brevemente el tema de consulta"></textarea>
+          Short comment
+          <textarea id="clientComment" rows="4" maxlength="350" placeholder="Add any details you want the advisor to know"></textarea>
         </label>
 
-        <button class="btn primary" type="submit">Confirmar reserva</button>
+        <button class="btn primary" type="submit">Confirm Appointment</button>
         <p id="bookingMessage" class="booking-message" role="status"></p>
       </form>
     </section>
