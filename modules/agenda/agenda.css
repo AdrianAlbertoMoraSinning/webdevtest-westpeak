@@ -226,3 +226,39 @@
   .agenda-card,.booking-card{padding:18px;border-radius:20px;}
   .calendar-grid{grid-template-columns:1fr;}
 }
+
+/* Admin mobile fixes */
+
+input,
+textarea,
+select,
+button {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.agenda-card input,
+.agenda-card button,
+.booking-card input,
+.booking-card textarea,
+.booking-card button {
+  width: 100%;
+}
+
+@media(max-width:560px){
+  .agenda-header h1{
+    font-size: clamp(2.6rem, 15vw, 3.6rem);
+    line-height: .92;
+  }
+
+  .agenda-header p{
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .agenda-card,
+  .booking-card{
+    width: 100%;
+    overflow: hidden;
+  }
+}
