@@ -1,13 +1,13 @@
 :root{
-  --agenda-bg:#f7f2ec;
+  --agenda-bg:#f4f8fd;
   --agenda-card:#ffffff;
-  --agenda-border:#e7dccf;
-  --agenda-dark:#2a211c;
-  --agenda-muted:#76695f;
-  --agenda-gold:#9b6b35;
-  --agenda-gold-dark:#704715;
-  --agenda-soft:#f2e8dc;
-  --agenda-disabled:#d8d2cb;
+  --agenda-border:#dce7f3;
+  --agenda-dark:#08223b;
+  --agenda-muted:#64748b;
+  --agenda-gold:#2563db;
+  --agenda-gold-dark:#0d3157;
+  --agenda-soft:#eaf2fb;
+  --agenda-disabled:#d8e1ec;
 }
 
 .agenda-page{
@@ -97,7 +97,7 @@
   border:1px solid var(--agenda-border);
   border-radius:18px;
   padding:14px;
-  background:#fffaf4;
+  background:#f8fbff;
 }
 
 .calendar-day h3{
@@ -169,7 +169,7 @@
   border-radius:14px;
   padding:13px 14px;
   font:inherit;
-  background:#fffdf9;
+  background:#ffffff;
   color:var(--agenda-dark);
 }
 
@@ -261,4 +261,22 @@ button {
     width: 100%;
     overflow: hidden;
   }
+}
+
+.agenda-header h1{
+  color:#08223b;
+}
+
+.agenda-card,.booking-card{
+  box-shadow:0 22px 60px rgba(15,23,42,.10);
+}
+
+.booking-card{
+  border-top:4px solid #2563db;
+}
+
+.slot-button.booked{
+  background:#d8e1ec;
+  color:#6b7280;
+  border-color:#cbd5e1;
 }
