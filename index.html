@@ -351,7 +351,26 @@
       Book
     </a>
   </div>
+  <script>
+    const approvalForm = document.getElementById('approval-form');
 
+    if (approvalForm) {
+      approvalForm.addEventListener('submit', function () {
+        const leadData = {
+          name: approvalForm.querySelector('[name="full_name"]').value.trim(),
+          phone: approvalForm.querySelector('[name="phone"]').value.trim(),
+          email: approvalForm.querySelector('[name="email"]').value.trim(),
+          creditSituation: approvalForm.querySelector('[name="credit_situation"]').value.trim(),
+          monthlyIncome: approvalForm.querySelector('[name="monthly_income"]').value.trim()
+        };
+
+        localStorage.setItem('mtc_lead', JSON.stringify(leadData));
+      });
+    }
+  </script>
+
+
+  
   <script src="js/app.js"></script>
 </body>
 </html>
