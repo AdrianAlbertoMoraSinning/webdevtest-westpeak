@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda de consultas | AP Abogados Asociados</title>
+  <meta name="description" content="Agenda una consulta con AP Abogados Asociados. Selecciona fecha y hora disponible." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="agenda.css" />
+</head>
+<body class="agenda-page">
+  <header class="agenda-header">
+    <a class="agenda-back" href="../../index.html">← Volver al inicio</a>
+    <div>
+      <p class="eyebrow">Agenda de consultas</p>
+      <h1>Selecciona una fecha y hora disponible</h1>
+      <p>Horario de atención: lunes a viernes, de 8:00 a.m. a 5:00 p.m.</p>
+    </div>
+  </header>
+
+  <main class="agenda-shell">
+    <section class="agenda-card">
+      <div class="agenda-toolbar">
+        <button class="agenda-nav" id="prevWeek" type="button">← Semana anterior</button>
+        <strong id="weekLabel">Cargando...</strong>
+        <button class="agenda-nav" id="nextWeek" type="button">Semana siguiente →</button>
+      </div>
+      <div id="calendarGrid" class="calendar-grid" aria-live="polite"></div>
+      <p class="agenda-note">Las horas en gris ya no están disponibles. La reserva se confirma al enviar el formulario.</p>
+    </section>
+
+    <section class="booking-card" id="bookingPanel">
+      <p class="eyebrow">Formulario de reserva</p>
+      <h2 id="selectedSlotTitle">Selecciona una hora</h2>
+      <form id="bookingForm" class="booking-form">
+        <input type="hidden" id="appointmentDate" />
+        <input type="hidden" id="appointmentTime" />
+
+        <label>
+          Nombre completo
+          <input id="clientName" type="text" required maxlength="80" placeholder="Tu nombre" />
+        </label>
+
+        <label>
+          Teléfono o WhatsApp
+          <input id="clientPhone" type="tel" required maxlength="30" placeholder="Ej. +57 310 000 0000" />
+        </label>
+
+        <label>
+          Correo electrónico
+          <input id="clientEmail" type="email" maxlength="90" placeholder="nombre@email.com" />
+        </label>
+
+        <label>
+          Comentario corto
+          <textarea id="clientComment" rows="4" maxlength="350" placeholder="Describe brevemente el tema de consulta"></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Confirmar reserva</button>
+        <p id="bookingMessage" class="booking-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="agenda-config.js"></script>
+  <script src="agenda.js"></script>
+</body>
+</html>
