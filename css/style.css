@@ -196,20 +196,20 @@ select{appearance:auto}
 
 .hidden-field{display:none!important}
 .site-header .nav {
-  min-height: 105px !important;
+  min-height: 128px !important;
   padding: 0 !important;
 }
 
 .site-header .brand {
-  width: 310px !important;
-  height: 105px !important;
+  width: 330px !important;
+  height: 128px !important;
   display: flex !important;
   align-items: center !important;
-  overflow: hidden !important;
+  overflow: visible !important;
 }
 
 .site-header .brand-logo {
-  width: 250px !important;
+  width: 270px !important;
   height: auto !important;
   display: block !important;
 }
@@ -235,4 +235,28 @@ select{appearance:auto}
 
 .social-links a:hover {
   opacity: 0.8;
+}
+
+@media(max-width:1000px){
+  .site-header .nav {
+    min-height: 112px !important;
+  }
+
+  .site-header .brand {
+    width: 270px !important;
+    height: 112px !important;
+  }
+
+  .site-header .brand-logo {
+    width: 230px !important;
+  }
+
+  .nav-links {
+    top: 112px;
+  }
+ 
+}
+.site-header .brand-logo,
+.footer-logo{
+  background: transparent !important;
 }
