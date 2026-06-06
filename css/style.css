@@ -201,7 +201,7 @@ select{appearance:auto}
 }
 
 .site-header .brand {
-  width: 330px !important;
+  width: 380px !important;
   height: 128px !important;
   display: flex !important;
   align-items: center !important;
@@ -213,6 +213,12 @@ select{appearance:auto}
   height: auto !important;
   display: block !important;
 }
+
+.site-header .brand-logo{
+  max-height: 110px !important;
+  object-fit: contain !important;
+}
+
 
 .footer-logo {
   width: 240px !important;
