@@ -15,7 +15,7 @@
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#home" aria-label="Montecristo Auto Finance home">
-        <img src="images/montecristo-logo.png"
+        <img src="images/montecristo-logo-transparent.png"
          alt="Montecristo Auto Finance"
          class="brand-logo">
       </a>
@@ -29,6 +29,7 @@
         <a href="#reviews">Reviews</a>
         <a href="#resources">Resources</a>
         <a href="modules/agenda/agenda.html">Book Appointment</a>
+        <a href="credit-application.html">Credit Application</a>
         <a class="nav-cta" href="#approval-form">Get Approved</a>
       </nav>
     </div>
@@ -39,6 +40,7 @@
       <div class="hero-shade"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
+          <img class="hero-mark" src="images/montecristo-logo-white.png" alt="Montecristo Auto Finance">
           <p class="eyebrow">Local expertise. Real solutions.</p>
           <h1>Helping Albertans Get Approved and On the Road.</h1>
           <p class="hero-lead">
@@ -47,6 +49,7 @@
 
           <div class="hero-actions">
             <a class="btn primary" href="#approval-form">Get Pre-Approved</a>
+            <a class="btn secondary dark" href="credit-application.html">Credit Application</a>
             <a class="btn secondary dark" href="modules/agenda/agenda.html">
               Book Appointment</a>
             <a class="btn secondary" href="mailto:info@mtcautofinance.ca?subject=Montecristo Auto Finance">Email an Advisor</a>
@@ -82,14 +85,14 @@
     <section class="advisor-area" id="about">
       <div class="container advisor-layout">
         <aside class="vertical-stats">
-          <div><span>⚙</span><strong>8+</strong><small>Years Experience</small></div>
+          <div><span>⚙</span><strong>10+</strong><small>Years Experience</small></div>
           <div><span>☑</span><strong>5000+</strong><small>Drivers Helped</small></div>
           <div><span>⌖</span><strong>Alberta</strong><small>Calgary & Area Expertise</small></div>
           <div><span>◉</span><strong>90%+</strong><small>Approval Pathways</small></div>
         </aside>
 
         <div class="advisor-photo">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=900&auto=format&fit=crop" alt="Canadian auto finance advisor">
+          <img src="images/marlon-molina.jpg" alt="Marlon Molina, Montecristo Auto Finance advisor">
         </div>
 
         <div class="advisor-copy">
@@ -103,7 +106,7 @@
           </p>
 
           <ul class="check-list">
-            <li>8+ years automotive finance experience</li>
+            <li>10+ years automotive finance experience</li>
             <li>Finance and real estate background</li>
             <li>Trusted by Calgary and Alberta drivers</li>
             <li>Bilingual support available</li>
@@ -190,24 +193,38 @@
     <section class="reviews-section" id="reviews">
       <div class="container">
         <div class="section-title light">
-          <h2>What Our Clients Say</h2>
-          <p>Real stories from Albertans we have helped.</p>
+          <p class="eyebrow">Google Reviews</p>
+          <h2>Trusted by Alberta Drivers</h2>
+          <p>Real feedback and selected client stories that help new customers feel confident before applying.</p>
         </div>
 
-        <div class="reviews-grid">
-          <article>
+        <div class="google-review-strip">
+          <div>
+            <span class="review-score">5.0</span>
+            <span class="review-stars">★★★★★</span>
+            <small>Google Reviews</small>
+          </div>
+          <p>Montecristo Auto Finance can display selected testimonials here and keep them updated from the private admin panel, with no monthly review-widget subscription.</p>
+          <div class="review-actions">
+            <a class="btn secondary" href="https://www.google.com/search?q=Montecristo+Credit+Marlon+Molina+Google+Reviews" target="_blank" rel="noopener">Read Google Reviews</a>
+            <a class="btn primary" href="https://www.google.com/search?q=Montecristo+Credit+Marlon+Molina+Google+Reviews" target="_blank" rel="noopener">Leave a Review</a>
+          </div>
+        </div>
+
+        <div class="reviews-grid" id="reviewsGrid">
+          <article data-review-fallback>
             <div class="stars">★★★★★</div>
             <p>“Montecristo Auto Finance made the impossible feel possible. I had credit issues and finally understood my options.”</p>
             <strong>Jason R.</strong>
             <small>Calgary, AB</small>
           </article>
-          <article>
+          <article data-review-fallback>
             <div class="stars">★★★★★</div>
             <p>“Professional, honest and clear. The process felt simple from start to finish.”</p>
             <strong>Sandra M.</strong>
             <small>Airdrie, AB</small>
           </article>
-          <article>
+          <article data-review-fallback>
             <div class="stars">★★★★★</div>
             <p>“As a newcomer, I did not know where to start. They explained everything and helped me move quickly.”</p>
             <strong>Carlos G.</strong>
@@ -271,6 +288,9 @@
         <a class="btn primary" href="#approval-form">
           Get Pre-Approved
         </a>
+        <a class="btn secondary dark" href="credit-application.html">
+          Credit Application
+        </a>
         <a class="btn secondary dark"
            href="modules/agenda/agenda.html">
            Book Appointment
@@ -284,7 +304,7 @@
     <div class="container footer-layout">
       <div>
         <a class="brand footer-brand" href="#home">
-           <img src="images/montecristo-logo.png"
+           <img src="images/montecristo-logo-white.png"
            alt="Montecristo Auto Finance"
            class="brand-logo footer-logo">
         </a>
@@ -305,6 +325,7 @@
         <a href="#approval-form">Bad Credit Financing</a>
         <a href="#approval-form">Newcomer Financing</a>
         <a href="#approval-form">No Credit Financing</a>
+        <a href="credit-application.html">Credit Application</a>
         <a href="#approval-form">Vehicle Loans</a>
         <a href="#resources">Refinancing</a>
         <a href="#resources">Lease to Own Vehicles</a>
@@ -327,8 +348,8 @@
         <a href="https://www.facebook.com/profile.php?id=61590386949296" target="_blank">
           👍 Facebook
         </a>
-        <a href="#approval-form">
-          Apply Online
+        <a href="credit-application.html">
+          Credit Application
         </a>
         <p>Calgary, AB, Canada</p>
       </div>
@@ -347,8 +368,8 @@
     <a href="sms:+14039692916">
       SMS
     </a>
-    <a href="modules/agenda/agenda.html">
-      Book
+    <a href="credit-application.html">
+      Apply
     </a>
   </div>
   <script>
@@ -371,6 +392,7 @@
 
 
   
+  <script src="modules/agenda/agenda-config.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

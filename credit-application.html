@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credit Application | Montecristo Auto Finance</title>
+  <meta name="description" content="Secure credit application request for Montecristo Auto Finance in Calgary, Alberta." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="application-page">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html#home" aria-label="Montecristo Auto Finance home">
+        <img src="images/montecristo-logo-transparent.png" alt="Montecristo Auto Finance" class="brand-logo">
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="modules/agenda/agenda.html">Book Appointment</a>
+        <a class="nav-cta" href="credit-application.html">Credit Application</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="application-hero">
+      <div class="container application-hero-grid">
+        <div>
+          <p class="eyebrow">Finance</p>
+          <h1>Credit Application</h1>
+          <p class="hero-lead">Please fill out the information below and one of our representatives will contact you regarding your credit application request.</p>
+          <div class="hero-actions">
+            <a class="btn secondary dark" href="modules/agenda/agenda.html">Book Appointment</a>
+            <a class="btn secondary" href="mailto:info@mtcautofinance.ca?subject=Credit Application Question">Ask a Question</a>
+          </div>
+        </div>
+        <div class="application-side-card">
+          <img src="images/montecristo-logo-white.png" alt="Montecristo Auto Finance">
+          <p>Private request form for auto financing support in Calgary and across Alberta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="application-section">
+      <div class="container">
+        <form class="credit-form" name="montecristo-credit-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="montecristo-credit-application" />
+          <p class="hidden-field"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+
+          <div class="form-intro">
+            <h2>Applicant Information</h2>
+            <p>Fields marked with * are required. Sensitive information should only be submitted by the applicant directly.</p>
+          </div>
+
+          <fieldset>
+            <legend>1. Applicant Personal Information</legend>
+            <div class="form-grid two">
+              <label>First Name <span>*</span><input name="first_name" type="text" required></label>
+              <label>Last Name <span>*</span><input name="last_name" type="text" required></label>
+              <label>Email <span>*</span><input name="email" type="email" required></label>
+              <label>Phone <span>*</span><input name="phone" type="tel" required></label>
+              <label>SIN <small>(Optional)</small><input name="sin" type="text" inputmode="numeric" autocomplete="off"></label>
+              <label>Date of Birth <span>*</span><input name="date_of_birth" type="date" required></label>
+              <label>Marital Status <select name="marital_status"><option value="">Select...</option><option>Single</option><option>Married</option><option>Common-law</option><option>Separated</option><option>Divorced</option><option>Widowed</option></select></label>
+              <label>Driver's License Number <input name="drivers_license" type="text"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2. Applicant Address</legend>
+            <label>Home Address <span>*</span><input name="home_address" type="text" required></label>
+            <div class="form-grid three">
+              <label>Residence Status <select name="residence_status"><option value="">Select...</option><option>Own</option><option>Rent</option><option>Live with family</option><option>Other</option></select></label>
+              <label>Mortgage / Rent Amount (Monthly) <input name="monthly_housing_amount" type="text" placeholder="$"></label>
+              <label>How Long at this Address? <input name="address_length" type="text" placeholder="e.g. 2 years"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>3. Applicant Employer</legend>
+            <div class="form-grid two">
+              <label>Employer Name <input name="employer_name" type="text"></label>
+              <label class="checkbox-line"><input name="self_employed" type="checkbox" value="Yes"> Self Employed</label>
+              <label>Job Title <input name="job_title" type="text"></label>
+              <label>Work Phone <input name="work_phone" type="tel"></label>
+              <label>Gross Income (Monthly) <input name="gross_income_monthly" type="text" placeholder="$"></label>
+              <label>Income Frequency <select name="income_frequency"><option value="">Select...</option><option>Weekly</option><option>Bi-weekly</option><option>Semi-monthly</option><option>Monthly</option><option>Other</option></select></label>
+              <label>Employment Length <input name="employment_length" type="text" placeholder="e.g. 3 years"></label>
+              <label>Employment Address <input name="employment_address" type="text"></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Other Income</legend>
+            <div class="form-grid three">
+              <label>Source <input name="other_income_source" type="text"></label>
+              <label>Gross Income (Monthly) <input name="other_income_monthly" type="text" placeholder="$"></label>
+              <label>Income Frequency <select name="other_income_frequency"><option value="">Select...</option><option>Weekly</option><option>Bi-weekly</option><option>Semi-monthly</option><option>Monthly</option><option>Other</option></select></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>4. Co-Applicant Information</legend>
+            <label>Is there a Co-Applicant?
+              <select name="has_co_applicant"><option value="">Select...</option><option>No</option><option>Yes</option></select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>5. Trade In</legend>
+            <label>Do you have Trade-in?
+              <select name="has_trade_in"><option value="">Select...</option><option>No</option><option>Yes</option></select>
+            </label>
+            <label>Message <textarea name="message" rows="5" placeholder="Tell us about your vehicle, financing needs, or any special situation."></textarea></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Consent</legend>
+            <label class="consent-line"><input type="checkbox" name="contact_consent" value="Yes" required> By submitting this form, you agree to be contacted through phone calls, SMS, WhatsApp, or email regarding your inquiry, offers, and updates. You can opt out anytime by notifying us.</label>
+            <label class="consent-line"><input type="checkbox" name="credit_consent" value="Yes" required> By submitting this form, I consent to the collection, use and disclosure of my personal information as necessary to review credit, financing, and related personal information in connection with vehicle financing.</label>
+          </fieldset>
+
+          <button class="btn primary full" type="submit">Submit Credit Application →</button>
+          <p class="form-note">Montecristo Auto Finance will review your request and contact you directly.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container legal">
+      <span>© 2026 Montecristo Auto Finance. All rights reserved.</span>
+      <span><a href="index.html#home">Back to Home</a></span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
