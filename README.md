@@ -27,3 +27,11 @@ Then redeploy the Apps Script Web App and confirm the deployment URL remains the
 The reviews module has no monthly subscription cost. Reviews can be added, edited, hidden, or deleted from the private admin panel.
 
 - Google Review buttons currently point to the existing Google Business search for "Montecristo Credit - Marlon Molina". Replace with the direct Google Reviews URL when Marlon shares it.
+
+### Google Reviews / Business Profile Note
+
+The client reported that searching `Montecristo auto finance` does not show a separate Google Reviews profile. The active profile found is:
+
+`Montecristo Credit - Marlon Molina` — 5.0 rating, 11 Google reviews.
+
+This package addresses that by using the existing Google Business profile as the reviews source on the website. The section explains that Google currently indexes the business under `Montecristo Credit - Marlon Molina`, so the existing credibility and reviews can be used immediately instead of starting from zero. The website links can later be replaced with a direct review/share link from Google Business Profile.

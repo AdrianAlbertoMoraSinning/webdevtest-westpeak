@@ -355,3 +355,14 @@ textarea{width:100%;margin-top:7px;padding:13px 12px;border:1px solid #cfdbea;bo
     max-height:98px!important;
   }
 }
+
+.review-profile-note{
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:16px;
+  padding:16px 18px;
+  margin:0 0 24px;
+  color:#d9e8f7;
+  line-height:1.55;
+}
+.review-profile-note strong{color:#fff}
