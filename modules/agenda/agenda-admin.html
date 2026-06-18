@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Admin Appointments | Montecristo Mortgage + Auto</title>
+  <title>Admin Panel | Montecristo Auto Finance</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
   <link rel="stylesheet" href="agenda.css" />
 </head>
 
@@ -20,8 +20,8 @@
 
     <div>
       <p class="eyebrow">Private Admin Panel</p>
-      <h1>Manage Appointment Requests</h1>
-      <p>Review, update, or cancel appointment requests submitted through the website.</p>
+      <h1>Manage Website Requests</h1>
+      <p>Review appointments and manage selected Google Review testimonials from one private panel.</p>
     </div>
   </header>
 
@@ -44,15 +44,70 @@
     </section>
 
     <section class="agenda-card admin-panel hidden" id="adminPanel">
-      <div class="agenda-toolbar">
-        <h2>Registered Appointments</h2>
-
-        <button class="agenda-nav" id="refreshBookings" type="button">
-          Refresh
-        </button>
+      <div class="admin-tabs" aria-label="Admin sections">
+        <button class="admin-tab active" id="appointmentsTab" type="button">Appointments</button>
+        <button class="admin-tab" id="reviewsTab" type="button">Reviews</button>
       </div>
 
-      <div id="adminBookings" class="admin-bookings"></div>
+      <div id="appointmentsPanel">
+        <div class="agenda-toolbar">
+          <h2>Registered Appointments</h2>
+
+          <button class="agenda-nav" id="refreshBookings" type="button">
+            Refresh
+          </button>
+        </div>
+
+        <div id="adminBookings" class="admin-bookings"></div>
+      </div>
+
+      <div id="reviewsPanel" class="hidden">
+        <div class="agenda-toolbar">
+          <h2>Website Reviews</h2>
+          <button class="agenda-nav" id="refreshReviews" type="button">Refresh</button>
+        </div>
+
+        <form id="reviewForm" class="review-admin-form">
+          <input type="hidden" id="reviewId" />
+          <div class="inline-fields">
+            <label>Customer Name
+              <input id="reviewCustomer" type="text" placeholder="Customer name" required />
+            </label>
+            <label>Stars
+              <select id="reviewRating" required>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+              </select>
+            </label>
+            <label>Location
+              <input id="reviewLocation" type="text" placeholder="Calgary, AB" />
+            </label>
+          </div>
+
+          <label>Review Text
+            <textarea id="reviewText" placeholder="Paste or write the review to feature on the website." required></textarea>
+          </label>
+
+          <div class="inline-fields">
+            <label>Status
+              <select id="reviewStatus">
+                <option value="active">Visible</option>
+                <option value="hidden">Hidden</option>
+              </select>
+            </label>
+            <label>Display Order
+              <input id="reviewSort" type="number" min="1" value="1" />
+            </label>
+            <button class="btn primary" type="submit">Save Review</button>
+          </div>
+          <p id="reviewMessage" class="admin-review-status"></p>
+        </form>
+
+        <div id="adminReviews"></div>
+      </div>
     </section>
   </main>
 

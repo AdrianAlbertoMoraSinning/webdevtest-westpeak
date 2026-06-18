@@ -1,5 +1,5 @@
 window.AGENDA_CONFIG = {
-  companyName: "Montecristo Mortgage + Auto",
+  companyName: "Montecristo Auto Finance",
   ownerEmail: "marlon@mtcautofinance.ca",
   ownerWhatsapp: "14039692916",
   adminPin: "MTC2026",
