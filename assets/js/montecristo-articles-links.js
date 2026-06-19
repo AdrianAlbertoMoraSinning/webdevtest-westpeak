@@ -11,38 +11,38 @@
       title: "Understanding Car Loans in Alberta",
       category: "Loan Basics",
       url: "/articles/understanding-car-loans-in-alberta.html",
-      cta: "Read More →"
+      cta: ""
     },
     {
       title: "Bad Credit Auto Loans",
       category: "Credit Help",
       url: "/articles/bad-credit-auto-loans.html",
-      cta: "Read More →"
+      cta: ""
     },
     {
       title: "Financing as a Newcomer to Canada",
       category: "Newcomers",
       url: "/articles/financing-newcomer-canada.html",
-      cta: "Read More →"
+      cta: ""
     },
     {
       title: "Tips to Improve Your Approval Odds",
       category: "Tips & Advice",
       url: "/articles/improve-approval-odds.html",
-      cta: "Read More →"
+      cta: ""
     },
     {
       title: "Lower Your Interest Rate",
       category: "Refinancing",
       url: "/articles/lower-interest-rate.html",
-      cta: "Read More →"
+      cta: ""
     },
     {
       title: "Flexible Financing Options",
       oldTitle: "Guaranteed Financing Options",
       category: "Lease to Own",
       url: "/articles/flexible-financing-options.html",
-      cta: "Read More →"
+      cta: ""
     }
   ];
 
