@@ -366,3 +366,14 @@ textarea{width:100%;margin-top:7px;padding:13px 12px;border:1px solid #cfdbea;bo
   line-height:1.55;
 }
 .review-profile-note strong{color:#fff}
+
+/* Integrated article cards: make the full Resources card clickable */
+.resource-grid > a.resource-card{display:block;color:inherit;text-decoration:none;border-radius:12px}
+.resource-grid > a.resource-card article{height:100%;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.resource-grid > a.resource-card:hover article{transform:translateY(-4px);box-shadow:0 22px 50px rgba(15,23,42,.14)}
+.resource-grid > a.resource-card:focus-visible{outline:3px solid rgba(37,99,235,.45);outline-offset:4px}
+.resource-grid .read-more{display:inline-block;margin-top:12px;font-weight:900;color:var(--navy)}
+.resource-grid > a.resource-card:nth-child(5) article,
+.resource-grid > a.resource-card:nth-child(6) article{padding:0}
+.resource-grid > a.resource-card:nth-child(5) article>div,
+.resource-grid > a.resource-card:nth-child(6) article>div{padding:16px}
